@@ -1,5 +1,5 @@
 import React from 'react'
-import SellItem from '../components/sellItem'
+import SellItem from '../components/SellItem'
 
 export default function page() {
   return (
