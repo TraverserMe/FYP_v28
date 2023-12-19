@@ -47,7 +47,7 @@ export default function itemGallery() {
                     className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full'
                     onClick={() => {router.push('/buyer')}}
                 >Buyer Dashboard</button>
-                <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 my-6'>
+                <div className='grid grid-cols-3 my-3'>
                     {filteredItems.map((item, index) => (
                         <ItemCard item={item} index={index} />
                     ))}

@@ -6,17 +6,17 @@ import React, { useState, useEffect } from 'react'
 export default function ItemCard({ item, index }) {
   return (
     <>
-    <div key={index} className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div key={index} className="max-w-md mx-auto my-2 bg-white rounded-xl shadow-md overflow-hidden lg:max-w-8xl">
         <Link href={`/item/${index}`}>
-          <div className="md:flex">
-              <div className="md:shrink-0">
+          <div className="lg:flex lg:w-full w-75 ">
+              <div className="lg:shrink-0">
                   <Image
                     src={`https://ipfs.io/ipfs/${item.image}`}
                     alt={item.name}
                     width={100}
                     height={100}
                     priority={true}
-                    className="h-32 w-80 object-cover md:h-full md:w-48"
+                    className="h-40 w-100 object-cover lg:h-full lg:w-full"
                   />
               {/* <img className="h-48 w-full object-cover md:h-full md:w-48" src="../public/images/dao.png" alt="Modern building architecture"> */}
               </div>
